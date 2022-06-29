@@ -1,5 +1,5 @@
 function change(elem){
-    window.history.pushState("", "", `${elem.value}`);
+    window.history.pushState("", "", `lycee/${elem.value}`);
     location.reload()
 }
 
