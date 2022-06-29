@@ -1,2 +1,2 @@
-# lycee
+# Lycee
 Cours

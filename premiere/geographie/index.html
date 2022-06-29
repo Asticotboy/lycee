@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géographie</title>
+    <style>
+        body{
+            background: linear-gradient(45deg, blueviolet, violet);
+            align-content: center;
+            text-align: center;
+        }
+
+        #container{
+            position: absolute;
+            top: 15%;
+            left:15%;
+            transform: translateX(-50%);
+            box-shadow: 10px 10px 15px  black;
+            text-align: center;
+            width: 300px; 
+            border-radius: 2%;
+            height: 500px;
+            background-color: white;
+
+            font-size: large;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        #container button{
+            color:white;
+            width: 80%;
+            height: 8%;
+            border-radius: 12px;
+            border: 3px solid black;
+            background-color: blueviolet;
+
+            margin-left: 5%;
+            margin-bottom: 5%;
+        }
+
+        #container button:hover{
+            background-color: red;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0px;
+            color: white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;    
+        }
+
+        h1{
+            margin-right: 40%;
+            margin-left: 40%;
+            color: white;
+            font-size: xx-large;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:rgb(48, 225, 113);
+            border-radius: 8px;
+
+            box-shadow: 8px 4px 4px lightblue;
+        }
+
+        iframe{
+            position: absolute;
+            right: 10%;
+            width: 800px;
+            height: 600px;
+            display: none;
+            border-radius: 3%;
+            border: 4px solid black;
+        }
+
+        #container #return{
+            margin-top: 30%;
+            background-color: lightcoral;
+        }
+
+        #container #return:hover{
+            background-color: lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Première : Géographie</h1>
+    <div id="container">
+        <p>
+            Choisissez le cours de votre choix :
+        </p>
+        <button id="lametropolisation">La métropolisation, un processus mondial différencié</button>
+        <br><br>
+        <button id="espacesproduction">Les espaces de production dans le monde</button>
+        <br><br>
+        
+
+        <button onclick="change(this)" id="return" value="/premiere">Retour</button>
+    </div>
+
+    <iframe id="iframe"></iframe>
+
+
+
+
+<footer>
+    <small>Asticotboy#4063</small>
+</footer>
+
+
+    <script>
+        document.getElementById("lametropolisation").addEventListener("click", ()=>{
+            document.getElementById("iframe").style.display = "block";
+            document.getElementById("iframe").src = "lametropolisation.html";
+        });
+
+        document.getElementById("espacesproduction").addEventListener("click", ()=>{
+            document.getElementById("iframe").style.display = "block";
+            document.getElementById("iframe").src = "espacesproduction.html";
+        });
+   
+        
+    </script>
+</body>
+</html>
